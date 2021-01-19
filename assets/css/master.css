@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F6F8F9;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  background: #FFF;
+}
+
+header div.logo {
+  width: 30%;
+  padding: 10px 20px;
+}
+
+header div.logo > img, header div.logo > span.logo-title {
+  vertical-align: middle;
+}
+
+header div.logo > span.logo-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/* main */
+
+main {
+  width: 70%;
+  margin: 40px auto;
+  background: #FFF;
+}
+
+main div.row {
+  padding: 15px 50px 8px;
+}
+
+main div.row.hr {
+  border-bottom: 2px solid #F6F8F9;
+}
+
+/* inputs */
+
+main div.row > input[type=button] {
+  padding: 7px 13px;
+  background: #47ADF1;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main div.row > input[type=button]:hover {
+  background-color: #031732;
+  transition: 0.2s linear;
+}
+
+main div.row input[type=button]:disabled {
+  background: none;
+  color: #D4D8DC;
+  border: 1px solid #D4D8DC;
+  cursor: default;
+}
+
+/* tasks */
+
+main div.row ul {
+  margin-top: 20px;
+}
+
+main div.row ul li {
+  list-style: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: #444851;
+  margin-bottom: 20px;
+}
+
+main div.row ul li::before {
+  content: '\25BE';
+}
+
+main div.row ul li ul {
+  margin: 0 6px;
+}
+
+main div.row ul li ul li {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+main div.row ul li ul li:first-child {
+  margin-top: 5px;
+}
+
+/* tasks to do and tasks done  */
+
+main div.row ul li ul li.undone::before,
+main div.row ul li ul li.done::before {
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+main div.row ul li ul li.undone::before {
+  content: '\2573';
+  font-size: 8px;
+  color: #EA4237;
+  padding: 3px 4.5px;
+  border: 1px solid #EA4237;
+}
+
+main div.row ul li ul li.done::before {
+  content: '\2713';
+  font-size: 11px;
+  color: #75C9B6;
+  padding: 1px 4px;
+  border: 1px solid #75C9B6;
+}
+
+/* task categories */
+
+main div.row ul li ul li.editorial::after,
+main div.row ul li ul li.goals::after,
+main div.row ul li ul li.recruiting::after,
+main div.row ul li ul li.mobile::after,
+main div.row ul li ul li.website::after,
+main div.row ul li ul li.sales::after {
+  font-size: 10px;
+  color: #FFF;
+  padding: 5px 9px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+main div.row ul li ul li.editorial::after {
+  content: "Editorial";
+  background: #45ABEA;
+}
+
+main div.row ul li ul li.goals::after {
+  content: "Q1 Goals";
+  background: #9C72E4;
+}
+
+main div.row ul li ul li.recruiting::after {
+  content: "Recruiting";
+  background: #64C0A9;
+}
+
+main div.row ul li ul li.mobile::after {
+  content: "Mobile";
+  background: #F29E33;
+}
+
+main div.row ul li ul li.website::after {
+  content: "Website";
+  background: #D863A1;
+}
+
+main div.row ul li ul li.sales::after {
+  content: "Sales";
+  background: #B0C926;
+}
