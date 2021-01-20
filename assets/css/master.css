@@ -37,6 +37,7 @@ main {
   width: 70%;
   margin: 40px auto;
   background: #FFF;
+  border-radius: 6px;
 }
 
 main div.row {
