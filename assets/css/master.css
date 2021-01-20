@@ -64,7 +64,7 @@ main div.row > input[type=button]:hover {
   transition: 0.2s linear;
 }
 
-main div.row input[type=button]:disabled {
+main div.row > input[type=button]:disabled {
   background: none;
   color: #D4D8DC;
   border: 1px solid #D4D8DC;
