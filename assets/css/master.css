@@ -73,11 +73,11 @@ main div.row > input[type=button]:disabled {
 
 /* tasks */
 
-main div.row ul {
+main div.row > ul {
   margin-top: 20px;
 }
 
-main div.row ul li {
+main div.row ul > li {
   list-style: none;
   font-size: 25px;
   font-weight: bold;
@@ -85,21 +85,21 @@ main div.row ul li {
   margin-bottom: 20px;
 }
 
-main div.row ul li::before {
+main div.row ul > li::before {
   content: '\25BE';
 }
 
-main div.row ul li ul {
+main div.row ul > li > ul {
   margin: 0 6px;
 }
 
-main div.row ul li ul li {
+main div.row ul > li > ul > li {
   font-size: 20px;
   font-weight: normal;
   margin-bottom: 20px;
 }
 
-main div.row ul li ul li:first-child {
+main div.row ul > li > ul > li:first-child {
   margin-top: 5px;
 }
 
